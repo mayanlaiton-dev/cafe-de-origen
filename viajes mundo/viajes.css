@@ -1,0 +1,109 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+.encabezado{
+    background-color: blueviolet;
+    color: aqua;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.encabezado h1{
+    font-size: 2.5rem; 
+
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+}
+
+.menu a{
+    color:aliceblue;
+    text-decoration: none;
+    background-color: rgb(205, 169, 239);
+    padding: 10px;
+    border-radius: 6px;
+    margin: 0;
+}
+
+.contenido{
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+.destino{
+    background-color: aliceblue;
+    border-radius: 8px;
+    border: 1px solid rgba(red, green, blue, alpha);
+    padding: 15px;
+    box-shadow: 0 2px 6px black;
+
+    
+    display: flex;
+    flex-direction: column;
+}
+
+
+.destino .boton{
+    margin-top: auto;
+}
+
+
+.imagen{
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.boton{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: blueviolet;
+    color: aliceblue;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+@media(min-width:764px){
+
+    .menu{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .menu a{
+        width: 150px;
+    }
+
+
+    .encabezado h1{
+        font-size:2.5rem;
+    }
+    .contenido{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+@media(min-width: 1024px){
+    .contenido{
+        grid-template-columns: repeat(3, 1fr) ;
+    }
+     .menu a{
+        width: 200px;
+     }
+     .encabezado h1{
+        font-size: 4rem;
+     }
+}
+     
+
